@@ -1,4 +1,4 @@
-baseurl = "https://kubedl.io"
+baseurl = "https://morphling.dev"
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
