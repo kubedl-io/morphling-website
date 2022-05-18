@@ -6,15 +6,26 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'KubeDL',
-  tagline: 'KubeDL makes deep learning workloads run on Kubernetes more easily and efficiently.',
-  url: 'https://kubedl.io',
+  title: "Morphling",
+  tagline: "Morphling is an auto-configuration framework for machine learning model serving (inference) on Kubernetes.",
+  url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'kubedl-io', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your website repo name.
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'morphling', // Usually your GitHub org/user name.
+  projectName: 'morphling', // Usually your repo name.
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
 
   presets: [
     [
@@ -24,11 +35,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -40,18 +54,13 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'start',
-        content:
-            '⭐️ If you like KubeDL, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/kubedl-io/kubedl">GitHub</a>! ⭐️',
-      },
       navbar: {
-        title: 'KubeDL',
+        title: 'Morphling',
         logo: {
-          alt: 'KubeDL',
-          src: 'img/kubedl/kubedl-icon-color.svg',
+          alt: 'Morphling',
+          src: 'img/morphling.png',
         },
         items: [
           {
@@ -62,7 +71,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/kubedl-io/kubedl',
+            href: 'https://github.com/kubedl-io/morphling',
             label: 'GitHub',
             position: 'right',
           },
@@ -83,30 +92,19 @@ const config = {
           {
             title: 'Community',
             items: [
-              {
-                label: 'Dingtalk',
-                href: 'https://h5.dingtalk.com/circle/healthCheckin.html?dtaction=os&corpId=ding66e5c6edd2286ee0daaacaebab5406a2&b2324693-=bf33ff07-&cbdbhh=qwertyuiop',
-              }
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'KubeDL GitHub',
-                href: 'https://github.com/kubedl-io/kubedl',
-              },
-              {
-                label: 'Morphling GitHub',
+                label: 'GitHub',
                 href: 'https://github.com/kubedl-io/morphling',
               },
             ],
           },
         ],
-        copyright: `
-        <br />
-        <strong>© ${new Date().getFullYear()} The KubeDL Authors. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage/"> Trademark Usage</a> page.</strong
-        `,
+        //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

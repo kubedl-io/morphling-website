@@ -4,39 +4,39 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Multi Framework',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Automatic',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-          Support training and serving workloads in a single controller with enhancements in scheduling, performance, metadata persistency and more.
+        Automated tuning workflows hidden behind simple APIs.
       </>
     ),
   },
   {
-    title: 'Model Versioning and Lineage',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Convenient',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-          Manage and track a model version and lineage from the model generation to deployments natively in Kubernetes.
+        Out of the box ML model serving stress-test clients.
       </>
     ),
   },
   {
-    title: 'Auto Tuning for Model Deployment',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'General',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-          Automatic tuning of container configurations to maximize runtime and cost efficiency of model serving.
+        ML framework agnostic and generally support popular frameworks, including TensorFlow, PyTorch, etc.
       </>
     ),
-  }
+  },
 ];
 
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

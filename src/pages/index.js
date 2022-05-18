@@ -4,8 +4,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
-import Translate, { translate } from '@docusaurus/Translate';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -17,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/installation/install-using-yaml">
+            to="/docs/install-using-yaml">
             Get Started
           </Link>
         </div>
@@ -38,15 +37,7 @@ export default function Home() {
       </main>
       <div className={clsx('hero', styles.hero)}>
         <div className="container text--center">
-          <img src="/img/kubedl/kubedldashboard.png" alt="dashboard"/>
-        </div>
-      </div>
-      <div className={clsx('hero', styles.hero)}>
-        <div className="container text--center">
-          <h3 className="hero__subtitle">
-            <Translate>KubeDL is a Cloud Native Computing Foundation sandbox project</Translate>
-          </h3>
-          <div className={clsx('cncf-logo', styles.cncfLogo)} />
+          <img src="/img/mor.jpg" alt="dashboard"/>
         </div>
       </div>
     </Layout>
