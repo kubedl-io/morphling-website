@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Morphling",
-  tagline: "Morphling is an auto-configuration framework for machine learning model serving (inference) on Kubernetes.",
+  title: 'Morphling',
+  tagline: 'Morphling is an auto-configuration framework for machine learning model serving (inference) on Kubernetes.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -18,14 +18,6 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'morphling', // Usually your GitHub org/user name.
   projectName: 'morphling', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
 
   presets: [
     [
