@@ -42,7 +42,7 @@ jobs:
       run: npm test
     
     - name: Delete temporary directories
-      run: npm run clean
+      run: npm run clear
     
     - name: Build production website
       run: npm run build
