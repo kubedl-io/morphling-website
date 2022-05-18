@@ -72,7 +72,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/kubedl-io/morphling',
-            label: 'GitHub',
+            label: 'Morphling GitHub',
             position: 'right',
           },
         ],
