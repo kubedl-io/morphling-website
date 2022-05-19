@@ -8,28 +8,19 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Automated tuning workflows hidden behind simple APIs.
+        Automatic experiments for best configurations for model serving deployments.
       </>
     ),
   },
   {
-    title: 'Convenient',
+    title: 'Kubernetes Native',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Out of the box ML model serving stress-test clients.
+        Runs on Kubernetes with Kubernetes CRD API.
       </>
     ),
-  },
-  {
-    title: 'General',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        ML framework agnostic and generally support popular frameworks, including TensorFlow, PyTorch, etc.
-      </>
-    ),
-  },
+  }
 ];
 
 function Feature({Svg, title, description}) {

@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'morphling', // Usually your GitHub org/user name.
-  projectName: 'morphling', // Usually your repo name.
+  organizationName: 'kubedl-io', // Usually your GitHub org/user name.
+  projectName: 'morphling-website', // Usually your repo name.
 
   presets: [
     [
