@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmorphling_website=self.webpackChunkmorphling_website||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"A New Home Page...","permalink":"/blog/openkruise-1.0"}]}')}}]);
