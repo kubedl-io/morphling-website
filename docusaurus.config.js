@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Morphling',
   tagline: 'Morphling is an auto-configuration framework for machine learning model serving (inference) on Kubernetes.',
-  url: 'https://kubedl-io.github.io/morphling-website/',
+  url: 'https://kubedl-io.github.io/morphling-website/index.html',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
